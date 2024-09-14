@@ -9,6 +9,7 @@
     ./lsp.nix
     ./lualine.nix
     ./none-ls.nix
+    ./nvim-colorizer.nix
     ./nvim-tree.nix
     ./opts.nix
     ./telescope.nix
@@ -25,25 +26,49 @@
 
   keymaps = [
     {
+      # Go To Next Tab 
+      key = "<Tab>";
+      action = "<CMD>BufferLineCycleNext<CR>";
+      options = { desc = "Go To Next Tab"; };
+    }
+    {
+      # Go To Prev Tab 
+      key = "<S-Tab>";
+      action = "<CMD>BufferLineCyclePrev<CR>";
+      options = { desc = "Go To Prev Tab"; };
+    }
+    {
+      # Toggle Tab Pin 
+      key = "<leader>bp";
+      action = "<CMD>BufferLineTogglePin<CR>";
+      options = { desc = "Toggle Tab Pin "; };
+    }
+    {
+      # Close Tab 
+      key = "<leader>x";
+      action = "<CMD>bdelete<CR><CMD>BufferLineGoToBuffer 9999<CR>";
+      options = { desc = "Close Tab"; };
+    }
+    {
       # Toggle NvimTree
       key = "<C-n>";
       action = "<CMD>NvimTreeToggle<CR>";
       options = { desc = "Open File Tree"; };
     }
     {
-      # Open Term
+      # Open Vertical Term
       key = "<leader>tv";
       action = "<CMD>ToggleTerm direction=vertical<CR>";
       options = { desc = "Open Vertical Term"; };
     }
     {
-      # Open Term
+      # Open Horizontal Term
       key = "<leader>th";
       action = "<CMD>ToggleTerm direction=horizontal<CR>";
       options = { desc = "Open Horizontal Term"; };
     }
     {
-      # Open Term
+      # Open Floating Term
       key = "<leader>tf";
       action = "<CMD>ToggleTerm direction=float<CR>";
       options = { desc = "Open Floating Term"; };
@@ -55,10 +80,16 @@
       options = { desc = "Format File"; };
     }
     {
-      # Format file
+      # Find File
       key = "<leader>ff";
+      action = "<CMD>Telescope find file<CR>";
+      options = { desc = "Fuzzy Find File (Telescope find_file)"; };
+    }
+    {
+      # Fuzzy Finder
+      key = "<leader>fc";
       action = "<CMD>Telescope<CR>";
-      options = { desc = "Find (Telescope)"; };
+      options = { desc = "Fuzzy Find (Telescope)"; };
     }
   ];
 
