@@ -6,6 +6,7 @@
     ./cmp.nix
     ./git.nix
     ./harpoon.nix
+    ./image.nix
     ./lsp.nix
     ./lualine.nix
     ./none-ls.nix
