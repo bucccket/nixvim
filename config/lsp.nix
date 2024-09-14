@@ -7,6 +7,7 @@
 			hls.enable=true;
 			lua-ls.enable=true;
 			nixd.enable=true;
+      pyright.enable=true;
 		};
 		keymaps.lspBuf = {
 			"gd" = "definition";
