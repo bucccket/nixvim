@@ -82,7 +82,7 @@
     {
       # Find File
       key = "<leader>ff";
-      action = "<CMD>Telescope find file<CR>";
+      action = "<CMD>Telescope find_files<CR>";
       options = { desc = "Fuzzy Find File (Telescope find_file)"; };
     }
     {
