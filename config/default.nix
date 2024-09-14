@@ -32,7 +32,13 @@
     {
       # Open Term
       key = "<leader>v";
-      action = "<CMD>ToggleTerm<CR>";
+      action = "<CMD>ToggleTerm direction=vertical<CR>";
+      options = { desc = "Open Vertical Term"; };
+    }
+    {
+      # Open Term
+      key = "<leader>h";
+      action = "<CMD>ToggleTerm direction=horizontal<CR>";
       options = { desc = "Open Vertical Term"; };
     }
     {
