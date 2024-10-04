@@ -17,6 +17,7 @@
     ./toggleterm.nix
     ./treesitter.nix
     ./vim-nix.nix
+    ./vimtex.nix
     ./which-key.nix
     ./wilder.nix
   ];
