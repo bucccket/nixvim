@@ -4,6 +4,7 @@
     ./autosave.nix
     ./bufferline.nix
     ./cmp.nix
+    ./diffview.nix
     ./git.nix
     ./harpoon.nix
     ./image.nix

@@ -1,18 +1,23 @@
-# # Source: https://github.com/hmajid2301/dotfiles/blob/ab7098387426f73c461950c7c0a4f8fb4c843a2c/home-manager/editors/nvim/plugins/coding/cmp.nix
+# Source: https://github.com/hmajid2301/dotfiles/blob/ab7098387426f73c461950c7c0a4f8fb4c843a2c/home-manager/editors/nvim/plugins/coding/cmp.nix
 {
   plugins = {
     luasnip.enable = true;
+
     cmp-buffer = { enable = true; };
+
+    cmp-cmdline = { enable = true; };
 
     cmp-emoji = { enable = true; };
 
-    cmp-nvim-lsp = { enable = true; };
-
-    cmp-path = { enable = true; };
+    cmp-latex-symbols = { enable = true; };
 
     cmp_luasnip = { enable = true; };
 
-    cmp-latex-symbols = {enable = true; };
+    cmp-nvim-lsp = { enable = true; };
+
+    cmp-nvim-lsp-document-symbol = { enable = true; };
+
+    cmp-path = { enable = true; };
 
     cmp = {
       enable = true;
