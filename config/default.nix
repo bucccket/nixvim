@@ -22,6 +22,8 @@
     ./wilder.nix
   ];
 
+  plugins.web-devicons.enable = true;
+
   colorschemes.gruvbox.enable = true;
 
   globals.mapleader = " ";

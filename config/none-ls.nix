@@ -5,6 +5,7 @@
       code_actions = {
         gitrebase.enable = true;
         gitsigns.enable = true;
+        proselint.enable = true;
         refactoring.enable = true;
         statix.enable = true;
       };
@@ -17,6 +18,7 @@
           enable = true;
           settings = { extra_filetypes = [ "svg" ]; };
         };
+        vale.enable = true;
       };
       formatting = {
         clang_format.enable = true;

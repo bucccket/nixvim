@@ -12,6 +12,8 @@
 
     cmp_luasnip = { enable = true; };
 
+    cmp-latex-symbols = {enable = true; };
+
     cmp = {
       enable = true;
 
