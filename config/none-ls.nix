@@ -18,7 +18,6 @@
           enable = true;
           settings = { extra_filetypes = [ "svg" ]; };
         };
-        vale.enable = true;
       };
       formatting = {
         clang_format.enable = true;
