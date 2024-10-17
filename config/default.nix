@@ -7,7 +7,7 @@
     ./diffview.nix
     ./git.nix
     ./harpoon.nix
-    ./image.nix
+    #./image.nix
     ./lsp.nix
     ./lualine.nix
     ./none-ls.nix

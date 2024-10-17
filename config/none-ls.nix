@@ -14,10 +14,7 @@
         mypy.enable = true;
         pylint.enable = true;
         statix.enable = true;
-        tidy = {
-          enable = true;
-          settings = { extra_filetypes = [ "svg" ]; };
-        };
+        tidy.enable = true;
       };
       formatting = {
         clang_format.enable = true;
@@ -26,7 +23,8 @@
         nixfmt.enable = true;
         shellharden.enable = true;
         shfmt.enable = true;
-        tidy = {
+        tidy.enable = true;
+        xmllint = {
           enable = true;
           settings = { extra_filetypes = [ "svg" ]; };
         };
