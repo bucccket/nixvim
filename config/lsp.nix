@@ -4,7 +4,10 @@
     servers = {
       bashls.enable = true;
       clangd.enable = true;
-      hls.enable = true;
+      hls = {
+        enable = true;
+        installGhc = true;
+      };
       lua_ls.enable = true;
       nixd.enable = true;
       pyright.enable = true;
