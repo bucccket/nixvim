@@ -15,15 +15,16 @@
         pylint.enable = true;
         statix.enable = true;
         tidy.enable = true;
+        yamllint.enable = true;
       };
       formatting = {
         clang_format.enable = true;
         isort.enable = true;
         markdownlint.enable = true;
         nixfmt.enable = true;
+        prettierd.enable = true;
         shellharden.enable = true;
         shfmt.enable = true;
-        tidy.enable = true;
         xmllint = {
           enable = true;
           settings = { extra_filetypes = [ "svg" ]; };
