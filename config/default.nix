@@ -4,6 +4,7 @@
     ./autosave.nix
     ./bufferline.nix
     ./cmp.nix
+    ./colorizer.nix
     ./diffview.nix
     ./git.nix
     ./harpoon.nix
@@ -11,7 +12,6 @@
     ./lsp.nix
     ./lualine.nix
     ./none-ls.nix
-    ./nvim-colorizer.nix
     ./nvim-tree.nix
     ./opts.nix
     ./telescope.nix
