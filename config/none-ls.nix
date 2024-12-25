@@ -12,7 +12,6 @@
       diagnostics = {
         cppcheck.enable = true;
         mypy.enable = true;
-        pylint.enable = true;
         statix.enable = true;
         tidy.enable = true;
         yamllint.enable = true;
