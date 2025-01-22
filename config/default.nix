@@ -1,3 +1,5 @@
+{ config, pkgs, ... }:
+
 {
   # Import all your configuration modules here
   imports = [
@@ -8,6 +10,7 @@
     ./diffview.nix
     ./git.nix
     ./harpoon.nix
+    ./haskell-scope-highlighting.nix
     ./image.nix
     ./lsp.nix
     ./lualine.nix
@@ -21,6 +24,12 @@
     ./vimtex.nix
     ./which-key.nix
     ./wilder.nix
+  ];
+
+  extraPlugins = with pkgs.vimPlugins; [ 
+    haskell-tools-nvim 
+    haskell-vim
+    nvim-treesitter-parsers.haskell
   ];
 
   plugins.web-devicons.enable = true;

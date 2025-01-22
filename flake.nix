@@ -16,14 +16,12 @@
         let
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
-          inherit (pkgs) latexrun; # Reference latexrun from the package set
           nixvimModule = {
             inherit pkgs;
             module = import ./config; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
               # inherit (inputs) foo;
-              inherit latexrun; # Pass latexrun if you need it in your module
             };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
@@ -37,7 +35,6 @@
           packages = {
             # Lets you run `nix run .` to start nixvim
             default = nvim;
-            inherit latexrun; # Make latexrun available as a package
           };
         };
     };
