@@ -20,8 +20,10 @@
     ./telescope.nix
     ./toggleterm.nix
     ./treesitter.nix
+    ./trouble.nix
     ./vim-nix.nix
     ./vimtex.nix
+    ./web-devicons.nix
     ./which-key.nix
     ./wilder.nix
   ];
@@ -31,8 +33,6 @@
     haskell-vim
     nvim-treesitter-parsers.haskell
   ];
-
-  plugins.web-devicons.enable = true;
 
   colorschemes.gruvbox.enable = true;
 
@@ -104,6 +104,12 @@
       key = "<leader>fc";
       action = "<CMD>Telescope<CR>";
       options = { desc = "Fuzzy Find (Telescope)"; };
+    }
+    {
+      # Open Diagnostics
+      key = "<leader>dd";
+      action = "<CMD>Trouble diagnostics<CR>";
+      options = { desc = "Trouble Diagnostics"; };
     }
   ];
 
