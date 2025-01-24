@@ -10,7 +10,6 @@
     ./diffview.nix
     ./git.nix
     ./harpoon.nix
-    ./haskell-scope-highlighting.nix
     ./image.nix
     ./lsp.nix
     ./lualine.nix
