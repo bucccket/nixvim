@@ -4,6 +4,7 @@
   # Import all your configuration modules here
   imports = [
     ./autosave.nix
+    ./bufdelete.nix
     ./bufferline.nix
     ./cmp.nix
     ./colorizer.nix
@@ -66,7 +67,7 @@
     {
       # Close Tab 
       key = "<leader>x";
-      action = "<CMD>bdelete<CR><CMD>BufferLineGoToBuffer 9999<CR>";
+      action = "<CMD>Bdelete<CR><CMD>BufferLineGoToBuffer 9999<CR>";
       options = { desc = "Close Tab"; };
     }
     {
