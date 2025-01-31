@@ -8,6 +8,7 @@
     ./cmp.nix
     ./colorizer.nix
     ./diffview.nix
+    ./fastaction.nix
     ./git.nix
     ./harpoon.nix
     ./image.nix
