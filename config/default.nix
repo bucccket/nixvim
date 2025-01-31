@@ -28,8 +28,8 @@
     ./wilder.nix
   ];
 
-  extraPlugins = with pkgs.vimPlugins; [ 
-    haskell-tools-nvim 
+  extraPlugins = with pkgs.vimPlugins; [
+    haskell-tools-nvim
     haskell-vim
     nvim-treesitter-parsers.haskell
   ];
@@ -39,6 +39,12 @@
   globals.mapleader = " ";
 
   keymaps = [
+    {
+      #Auto action
+      key = "<C-space>";
+      action = "<cmd>lua require('fastaction').code_action()<CR>";
+      options = { desc = "Auto Actions"; };
+    }
     {
       # Go To Next Tab 
       key = "<Tab>";
