@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   plugins.none-ls = {
     enable = true;
     sources = {
@@ -14,6 +14,10 @@
         mypy.enable = true;
         pylint.enable = true;
         statix.enable = true;
+        swiftlint = {
+          enable = if pkgs.stdenv.isDarwin then true else false;
+          package = pkgs.swiftlint;
+        };
         tidy.enable = true;
         yamllint.enable = true;
       };
@@ -25,6 +29,10 @@
         prettierd.enable = true;
         shellharden.enable = true;
         shfmt.enable = true;
+        swiftformat = {
+          enable = if pkgs.stdenv.isDarwin then true else false;
+          package = pkgs.swiftformat;
+        };
         xmllint = {
           enable = true;
           settings = { extra_filetypes = [ "svg" ]; };
