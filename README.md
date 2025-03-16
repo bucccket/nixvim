@@ -1,6 +1,6 @@
 # Nixvim config
 
-Nixvim config inpsired from https://github.com/MikaelFangel/nixvim-config/tree/21e206a67debd5f4b22fb91835ecf6cbcdc53f99
+Nixvim config inpsired by (this config)[https://github.com/MikaelFangel/nixvim-config/tree/21e206a67debd5f4b22fb91835ecf6cbcdc53f99]
 
 ## Testing your new configuration
 
