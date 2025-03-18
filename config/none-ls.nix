@@ -13,7 +13,9 @@
         cppcheck.enable = true;
         mypy.enable = true;
         pylint.enable = true;
+        semgrep.enable = true;
         statix.enable = true;
+        stylelint.enable = true;
         tidy.enable = true;
         yamllint.enable = true;
       };
@@ -22,7 +24,10 @@
         isort.enable = true;
         markdownlint.enable = true;
         nixfmt.enable = true;
-        prettierd.enable = true;
+        prettierd = {
+          enable = true;
+          disableTsServerFormatter = true;
+        };
         shellharden.enable = true;
         shfmt.enable = true;
         xmllint = {
