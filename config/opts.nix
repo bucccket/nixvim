@@ -1,5 +1,6 @@
 {
   config.opts = {
+
     updatetime = 100; # Faster completion
 
     number = true;
@@ -16,6 +17,6 @@
     smartcase = true;
     wildmode = "list:longest";
 
-    undofile = true; # Build-in persistent undo
+    undofile = true; # Built-in persistent undo
   };
 }
