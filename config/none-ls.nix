@@ -5,7 +5,6 @@
       code_actions = {
         gitrebase.enable = true;
         gitsigns.enable = true;
-        proselint.enable = true;
         refactoring.enable = true;
         statix.enable = true;
       };

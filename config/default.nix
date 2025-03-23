@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # Import all your configuration modules here
@@ -9,6 +9,7 @@
     ./cmp.nix
     ./colorizer.nix
     ./diffview.nix
+    ./emmet.nix
     ./fastaction.nix
     ./git.nix
     ./image.nix

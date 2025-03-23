@@ -5,7 +5,10 @@
       key = "<Esc>";
       action = "<C-\\><C-n>";
       mode = "t";
-      options = { desc = "Escape terminal"; };
+      options = {
+        noremap = true;
+        desc = "Escape terminal";
+      };
     }
 
     {
