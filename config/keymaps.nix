@@ -2,7 +2,7 @@
   keymaps = [
 
     {
-      key = "<Esc>";
+      key = "<C-Esc>";
       action = "<C-\\><C-n>";
       mode = "t";
       options = {
@@ -103,5 +103,41 @@
       action = "<CMD>Trouble diagnostics<CR>";
       options = { desc = "Trouble Diagnostics"; };
     }
+    {
+      # Git Conflict Ours
+      key = "<leader>ch";
+      action = "<CMD>GitConflictChooseOurs<CR>";
+      options = { desc = "Git Conflict Choose OURS"; };
+    }
+    {
+      # Git Conflict Theirs
+      key = "<leader>cl";
+      action = "<CMD>GitConflictChooseTheirs<CR>";
+      options = { desc = "Git Conflict Choose Theirs"; };
+    }
+    {
+      # Git Conflict Both
+      key = "<leader>cb";
+      action = "<CMD>GitConflictChooseBoth<CR>";
+      options = { desc = "Git Conflict Choose BOTH"; };
+    }
+    {
+      # Git Conflict None
+      key = "<leader>cn";
+      action = "<CMD>GitConflictChooseNone<CR>";
+      options = { desc = "Git Conflict Choose NONE"; };
+    }
+    {
+      # Git Next Conflict 
+      key = "<leader>cj";
+      action = "<CMD>GitConflictNextConflict<CR>";
+      options = { desc = "Git Next Conflict"; };
+    } 
+    {
+      # Git Previous Conflict 
+      key = "<leader>ck";
+      action = "<CMD>GitConflictPrevConflict<CR>";
+      options = { desc = "Git Previous Conflict"; };
+    } 
   ];
 }
