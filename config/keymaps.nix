@@ -12,7 +12,7 @@
     }
 
     {
-      #Auto action
+      #Auto Action
       key = "<C-space>";
       action = "<cmd>lua require('fastaction').code_action()<CR>";
       options = { desc = "Auto Actions"; };
@@ -34,13 +34,13 @@
       # Fold
       key = "<C-F>";
       action = "<CMD>foldopen<CR>";
-      options = { desc = "Fold code"; };
+      options = { desc = "Fold Code"; };
     }
     {
       # Unfold 
       key = "<C-S-F>";
       action = "<CMD>foldclose<CR>";
-      options = { desc = "Unfold code"; };
+      options = { desc = "Unfold Code"; };
     }
 
     {
@@ -100,8 +100,20 @@
     {
       # Open Diagnostics
       key = "<leader>dd";
-      action = "<CMD>Trouble diagnostics<CR>";
+      action = "<CMD>Trouble diagnostics toggle<CR>";
       options = { desc = "Trouble Diagnostics"; };
+    }
+    {
+      # Open Symbols
+      key = "<leader>ds";
+      action = "<CMD>Trouble symbols toggle<CR>";
+      options = { desc = "Trouble Symbols"; };
+    }
+    {
+      # Open LSP
+      key = "<leader>dl";
+      action = "<CMD>Trouble lsp toggle<CR>";
+      options = { desc = "Trouble LSP Info toggle"; };
     }
     {
       # Git Conflict Ours
@@ -132,12 +144,80 @@
       key = "<leader>cj";
       action = "<CMD>GitConflictNextConflict<CR>";
       options = { desc = "Git Next Conflict"; };
-    } 
+    }
     {
       # Git Previous Conflict 
       key = "<leader>ck";
       action = "<CMD>GitConflictPrevConflict<CR>";
       options = { desc = "Git Previous Conflict"; };
-    } 
+    }
+
+    {
+      # Extract
+      key = "<leader>re";
+      action = ":Refactor extract";
+      mode = "x";
+      options = { desc = "Extract"; };
+    }
+    {
+      # Extract To File
+      key = "<leader>rf";
+      action = ":Refactor extract_to_file";
+      mode = "x";
+      options = { desc = "Extract To File"; };
+    }
+    {
+      # Extract Variable
+      key = "<leader>rv";
+      action = ":Refactor extract_var";
+      mode = "x";
+      options = { desc = "Extract Variable"; };
+    }
+    {
+      # Inline Variable
+      key = "<leader>ri";
+      action = ":Refactor inline_var";
+      mode = [ "n" "x" ];
+      options = { desc = "Inline Variable"; };
+    }
+    {
+      # Inline Function
+      key = "<leader>rI";
+      action = ":Refactor inline_func";
+      mode = "n";
+      options = { desc = "Inline Function"; };
+    }
+    {
+      # Extract Block
+      key = "<leader>rb";
+      action = ":Refactor extract_block";
+      mode = "n";
+      options = { desc = "Extract Block"; };
+    }
+    {
+      # Extract Block To File
+      key = "<leader>rB";
+      action = ":Refactor extract_block_to_file";
+      mode = "n";
+      options = { desc = "Extract Block To File"; };
+    }
+    {
+      # Open Diff View
+      key = "<leader>gd";
+      action = ":DiffviewOpen";
+      options = { desc = "Diffview Open"; };
+    }
+    {
+      # Close Diff View
+      key = "<leader>gD";
+      action = ":DiffviewClose";
+      options = { desc = "Diffview Close"; };
+    }
+    {
+      # View File History
+      key = "<leader>gf";
+      action = ":DiffviewFileHistory";
+      options = { desc = "View File History"; };
+    }
   ];
 }
