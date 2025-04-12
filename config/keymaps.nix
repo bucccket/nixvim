@@ -155,68 +155,68 @@
     {
       # Extract
       key = "<leader>re";
-      action = ":Refactor extract";
+      action = "<CMD>Refactor extract<CR>";
       mode = "x";
       options = { desc = "Extract"; };
     }
     {
       # Extract To File
       key = "<leader>rf";
-      action = ":Refactor extract_to_file";
+      action = "<CMD>Refactor extract_to_file<CR>";
       mode = "x";
       options = { desc = "Extract To File"; };
     }
     {
       # Extract Variable
       key = "<leader>rv";
-      action = ":Refactor extract_var";
+      action = "<CMD>Refactor extract_var<CR>";
       mode = "x";
       options = { desc = "Extract Variable"; };
     }
     {
       # Inline Variable
       key = "<leader>ri";
-      action = ":Refactor inline_var";
+      action = "<CMD>Refactor inline_var<CR>";
       mode = [ "n" "x" ];
       options = { desc = "Inline Variable"; };
     }
     {
       # Inline Function
       key = "<leader>rI";
-      action = ":Refactor inline_func";
+      action = "<CMD>Refactor inline_func<CR>";
       mode = "n";
       options = { desc = "Inline Function"; };
     }
     {
       # Extract Block
       key = "<leader>rb";
-      action = ":Refactor extract_block";
+      action = "<CMD>Refactor extract_block<CR>";
       mode = "n";
       options = { desc = "Extract Block"; };
     }
     {
       # Extract Block To File
       key = "<leader>rB";
-      action = ":Refactor extract_block_to_file";
+      action = "<CMD>Refactor extract_block_to_file<CR>";
       mode = "n";
       options = { desc = "Extract Block To File"; };
     }
     {
       # Open Diff View
       key = "<leader>gd";
-      action = ":DiffviewOpen";
+      action = "<CMD>DiffviewOpen<CR>";
       options = { desc = "Diffview Open"; };
     }
     {
       # Close Diff View
       key = "<leader>gD";
-      action = ":DiffviewClose";
+      action = "<CMD>DiffviewClose<CR>";
       options = { desc = "Diffview Close"; };
     }
     {
       # View File History
       key = "<leader>gf";
-      action = ":DiffviewFileHistory";
+      action = "<CMD>DiffviewFileHistory<CR>";
       options = { desc = "View File History"; };
     }
   ];
