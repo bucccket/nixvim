@@ -151,7 +151,12 @@
       action = "<CMD>GitConflictPrevConflict<CR>";
       options = { desc = "Git Previous Conflict"; };
     }
-
+    {
+      # LSP Rename
+      key = "<leader>rn";
+      action = "<CMD>lua vim.lsp.buf.rename()<CR>";
+      options = { desc = "Rename"; };
+    }
     {
       # Extract
       key = "<leader>re";

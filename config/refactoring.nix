@@ -1,5 +1,1 @@
-{
-  plugins.refactoring = {
-    enable = true;
-  };
-}
+{ plugins.refactoring = { enable = true; }; }

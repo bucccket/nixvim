@@ -1,5 +1,1 @@
-{
-  plugins.fastaction = {
-    enable = true;
-  };
-}
+{ plugins.fastaction = { enable = true; }; }

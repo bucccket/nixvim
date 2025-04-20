@@ -1,5 +1,1 @@
-{
-  plugins.bufdelete = {
-    enable = true;
-  };
-}
+{ plugins.bufdelete = { enable = true; }; }
