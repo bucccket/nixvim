@@ -3,6 +3,7 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./autopairs.nix
     ./autosave.nix
     ./bufdelete.nix
     ./bufferline.nix
