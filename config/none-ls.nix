@@ -10,6 +10,7 @@
       };
       diagnostics = {
         cppcheck.enable = true;
+        ktlint.enable = true;
         mypy.enable = true;
         pylint.enable = true;
         semgrep.enable = true;
@@ -21,6 +22,7 @@
       formatting = {
         clang_format.enable = true;
         isort.enable = true;
+        ktlint.enable = true;
         markdownlint.enable = true;
         nixfmt.enable = true;
         prettierd = {

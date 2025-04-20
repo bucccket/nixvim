@@ -7,14 +7,15 @@
         snippet.expand = "luasnip";
         completion = { autocomplete = false; };
         sources = [
-          { name = "nvim_lsp"; }
+          { name = "cmdline"; }
+          { name = "dap"; }
+          { name = "latex_symbols"; }
           { name = "luasnip"; }
+          { name = "nvim_lsp"; }
+          { name = "nvim_lsp_document_symbol"; }
           { name = "nvim_lua"; }
           { name = "path"; }
-          { name = "cmdline"; }
           { name = "zsh"; }
-          { name = "nvim_lsp_document_symbol"; }
-          { name = "latex_symbols"; }
         ];
 
         formatting = {
