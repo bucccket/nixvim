@@ -13,6 +13,7 @@
         ktlint.enable = true;
         mypy.enable = true;
         pylint.enable = true;
+        pydoclint.enable = true;
         semgrep.enable = true;
         statix.enable = true;
         stylelint.enable = true;
