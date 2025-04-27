@@ -12,7 +12,6 @@
         cppcheck.enable = true;
         ktlint.enable = true;
         mypy.enable = true;
-        #pylint.enable = true; # overridden by Pyright since Pyright can use venvs
         pydoclint.enable = true;
         semgrep.enable = true;
         statix.enable = true;

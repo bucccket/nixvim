@@ -22,6 +22,8 @@
     ./options.nix
     ./refactoring.nix
     ./telescope.nix
+    ./tmux-navigator.nix
+    ./todo-comments.nix
     ./toggleterm.nix
     ./treesitter.nix
     ./trouble.nix
