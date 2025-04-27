@@ -12,6 +12,7 @@
     ./diffview.nix
     ./emmet.nix
     ./fastaction.nix
+    ./fidget.nix
     ./git.nix
     ./image.nix
     ./keymaps.nix
