@@ -22,6 +22,7 @@
     ./nvim-tree.nix
     ./options.nix
     ./refactoring.nix
+    ./smear-cursor.nix
     ./telescope.nix
     ./tmux-navigator.nix
     ./todo-comments.nix
