@@ -1,8 +1,7 @@
 {
   keymaps = [
-
     {
-      key = "<C-Esc>";
+      key = "<S-Esc>";
       action = "<C-\\><C-n>";
       mode = "t";
       options = {
@@ -10,7 +9,6 @@
         desc = "Escape terminal";
       };
     }
-
     {
       #Auto Action
       key = "<C-space>";
@@ -223,6 +221,198 @@
       key = "<leader>gf";
       action = "<CMD>DiffviewFileHistory<CR>";
       options = { desc = "View File History"; };
+    }
+    # https://github.com/Neve-Project/nevica/blob/main/modules/mappings/debugger-keymaps.nix
+    {
+      # Breakpoint with condition
+      mode = "n";
+      key = "<leader>dB";
+      action =
+        "\n        <cmd>lua require('dap').set_breakpoint(vim.fn.input('Breakpoint condition: '))<cr>\n      ";
+      options = {
+        silent = true;
+        desc = "Breakpoint Condition";
+      };
+    }
+    {
+      # Toggle Breakpoint
+      mode = "n";
+      key = "<leader>db";
+      action = ":DapToggleBreakpoint<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle Breakpoint";
+      };
+    }
+    {
+      # DBG Continue
+      mode = "n";
+      key = "<leader>dc";
+      action = ":DapContinue<cr>";
+      options = {
+        silent = true;
+        desc = "Debug Continue";
+      };
+    }
+    {
+      # Run Debugger with Args
+      mode = "n";
+      key = "<leader>da";
+      action = "<cmd>lua require('dap').continue({ before = get_args })<cr>";
+      options = {
+        silent = true;
+        desc = "Run with Args";
+      };
+    }
+    {
+      # DBG Run to Cursor
+      mode = "n";
+      key = "<leader>dC";
+      action = "<cmd>lua require('dap').run_to_cursor()<cr>";
+      options = {
+        silent = true;
+        desc = "Run to cursor";
+      };
+    }
+    {
+      # DBG Goto (No Execute)
+      mode = "n";
+      key = "<leader>dg";
+      action = "<cmd>lua require('dap').goto_()<cr>";
+      options = {
+        silent = true;
+        desc = "Go to line (no execute)";
+      };
+    }
+    {
+      # DBG step into
+      mode = "n";
+      key = "<leader>di";
+      action = ":DapStepInto<cr>";
+      options = {
+        silent = true;
+        desc = "Step into";
+      };
+    }
+    {
+      # DBG down
+      mode = "n";
+      key = "<leader>dj";
+      action = "\n        <cmd>lua require('dap').down()<cr>\n      ";
+      options = {
+        silent = true;
+        desc = "Debug Down";
+      };
+    }
+    {
+      # DBG up
+      mode = "n";
+      key = "<leader>dk";
+      action = "<cmd>lua require('dap').up()<cr>";
+      options = {
+        silent = true;
+        desc = "Debug Up";
+      };
+    }
+    {
+      # DBG run last debug target
+      mode = "n";
+      key = "<leader>dl";
+      action = "<cmd>lua require('dap').run_last()<cr>";
+      options = {
+        silent = true;
+        desc = "Run Last";
+      };
+    }
+    {
+      # DBG step out
+      mode = "n";
+      key = "<leader>do";
+      action = ":DapStepOut<cr>";
+      options = {
+        silent = true;
+        desc = "Step Out";
+      };
+    }
+    {
+      # DBG step over
+      mode = "n";
+      key = "<leader>dO";
+      action = ":DapStepOver<cr>";
+      options = {
+        silent = true;
+        desc = "Step Over";
+      };
+    }
+    {
+      # DBG halt
+      mode = "n";
+      key = "<leader>dp";
+      action = "<cmd>lua require('dap').pause()<cr>";
+      options = {
+        silent = true;
+        desc = "Debug Pause";
+      };
+    }
+    {
+      # DBG toggle REPL
+      mode = "n";
+      key = "<leader>dr";
+      action = ":DapToggleRepl<cr>";
+      options = {
+        silent = true;
+        desc = "Toggle REPL";
+      };
+    }
+    {
+      # DBG session
+      mode = "n";
+      key = "<leader>ds";
+      action = "<cmd>lua require('dap').session()<cr>";
+      options = {
+        silent = true;
+        desc = "Debug Session";
+      };
+    }
+    {
+      # DBG terminate
+      mode = "n";
+      key = "<leader>dt";
+      action = ":DapTerminate<cr>";
+      options = {
+        silent = true;
+        desc = "Debug Terminate";
+      };
+    }
+    {
+      # DBG enable DAP-UI
+      mode = "n";
+      key = "<leader>du";
+      action = "<cmd>lua require('dapui').toggle()<cr>";
+      options = {
+        silent = true;
+        desc = "Debug UI";
+      };
+    }
+    {
+      # DBG enable DAP-UI widgets
+      mode = "n";
+      key = "<leader>dw";
+      action = "<cmd>lua require('dap.ui.widgets').hover()<cr>";
+      options = {
+        silent = true;
+        desc = "Debug Widgets";
+      };
+    }
+    {
+      # DBG evaluate section
+      mode = [ "n" "v" ];
+      key = "<leader>de";
+      action = "<cmd>lua require('dapui').eval()<cr>";
+      options = {
+        silent = true;
+        desc = "Debug Eval";
+      };
     }
   ];
 }

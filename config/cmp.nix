@@ -4,7 +4,11 @@
     cmp = {
       enable = true;
       settings = {
-        snippet.expand = "luasnip";
+        snippet.expand = ''
+          function(args)
+            require('luasnip').lsp_expand(args.body)
+          end
+        '';
         completion = { autocomplete = false; };
         sources = [
           { name = "cmdline"; }
@@ -17,9 +21,16 @@
           { name = "path"; }
           { name = "zsh"; }
         ];
+        experimental = { ghost_text = true; };
+        performance = {
+          debounce = 60;
+          fetching_timeout = 200;
+          max_view_entries = 30;
+        };
 
         formatting = {
           fields = [ "abbr" "kind" "menu" ];
+          expandable_indicator = true;
           format =
             # lua
             ''

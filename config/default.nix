@@ -9,6 +9,7 @@
     ./bufferline.nix
     ./cmp.nix
     ./colorizer.nix
+    ./dap.nix
     ./diffview.nix
     ./emmet.nix
     ./fastaction.nix
@@ -23,12 +24,15 @@
     ./options.nix
     ./refactoring.nix
     ./smear-cursor.nix
+    ./startpage.nix
+    ./tagbar.nix
     ./telescope.nix
     ./tmux-navigator.nix
     ./todo-comments.nix
     ./toggleterm.nix
     ./treesitter.nix
     ./trouble.nix
+    ./typescript-tools.nix
     ./vim-nix.nix
     ./vimtex.nix
     ./web-devicons.nix
