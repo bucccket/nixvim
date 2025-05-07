@@ -9,22 +9,6 @@
         indent.enable = true;
         highlight.enable = true;
         auto_install = true;
-        ensure_installed =
-          [
-            "c"
-            "cpp"
-            "java"
-            "nix"
-            "javascript"
-            "typescript"
-            "html"
-            "css"
-            "git_config" 
-            "git_rebase" 
-            "gitattributes" 
-            "gitcommit" 
-            "gitignore" 
-          ];
       };
     };
     treesitter-context.enable = true;
