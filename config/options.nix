@@ -30,11 +30,11 @@
 
     # https://github.com/Neve-Project/nevica/blob/main/modules/nixvim/performance.nix
     performance.byteCompileLua = {
-        enable = true;
-        configs = true;
-        initLua = true;
-        nvimRuntime = true;
-        plugins = true;
-      };
+      enable = true;
+      configs = true;
+      initLua = true;
+      nvimRuntime = true;
+      plugins = true;
+    };
   };
 }
