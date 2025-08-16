@@ -7,7 +7,6 @@
     ./autosave.nix
     ./bufdelete.nix
     ./bufferline.nix
-    ./claude.nix
     ./cmp.nix
     ./colorizer.nix
     ./dap.nix
