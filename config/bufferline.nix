@@ -44,8 +44,8 @@
           function(count, level, diagnostics_dict, context)
             local s = ""
             for e, n in pairs(diagnostics_dict) do
-              local sym = e == "error" and " "
-                or (e == "warning" and " " or "" )
+              local sym = e == "error" and "  "
+                or (e == "warning" and "  " or "" )
               if(sym ~= "") then
                 s = s .. " " .. n .. sym
               end
@@ -95,7 +95,7 @@
           icon = "▎";
           style = "icon";
         };
-        left_trunc_marker = "";
+        left_trunc_marker = " ";
         max_name_length = 18;
         max_prefix_length = 15;
         mode = "buffers";
@@ -107,7 +107,7 @@
           text_align = "center";
         }];
         persist_buffer_sort = true;
-        right_trunc_marker = "";
+        right_trunc_marker = " ";
         separator_style = [ "|" "|" ];
         show_buffer_close_icons = true;
         show_buffer_icons = true;
