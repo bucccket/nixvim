@@ -24,7 +24,7 @@
     ./options.nix
     ./refactoring.nix
     ./smear-cursor.nix
-    ./startpage.nix
+    # ./startpage.nix
     ./tagbar.nix
     ./telescope.nix
     ./tmux-navigator.nix
