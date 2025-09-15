@@ -144,10 +144,16 @@
       options = { desc = "Git Next Conflict"; };
     }
     {
-      # Git Previous Conflict 
+      # Git Previous Conflict
       key = "<leader>ck";
       action = "<CMD>GitConflictPrevConflict<CR>";
       options = { desc = "Git Previous Conflict"; };
+    }
+    {
+      # Toggle Claude Code
+      key = "<leader>cc";
+      action = "<CMD>ClaudeCode<CR>";
+      options = { desc = "Toggle Claude Code"; };
     }
     {
       # LSP Rename

@@ -7,6 +7,7 @@
     ./autosave.nix
     ./bufdelete.nix
     ./bufferline.nix
+    ./claude.nix
     ./cmp.nix
     ./colorizer.nix
     ./dap.nix
@@ -47,9 +48,7 @@
     nvim-treesitter-parsers.haskell
   ];
 
-  extraPackages = with pkgs; [
-    gcc
-  ];
+  extraPackages = with pkgs; [ gcc ];
 
   colorschemes.gruvbox.enable = true;
 
