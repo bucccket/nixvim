@@ -23,6 +23,7 @@
     ./nvim-tree.nix
     ./options.nix
     ./refactoring.nix
+    # ./rustaceanvim.nix
     ./smear-cursor.nix
     # ./startpage.nix
     ./tagbar.nix
@@ -44,6 +45,10 @@
     haskell-tools-nvim
     haskell-vim
     nvim-treesitter-parsers.haskell
+  ];
+
+  extraPackages = with pkgs; [
+    gcc
   ];
 
   colorschemes.gruvbox.enable = true;

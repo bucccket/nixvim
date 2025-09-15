@@ -11,6 +11,7 @@
         '';
         completion = { autocomplete = false; };
         sources = [
+          { name = "clippy"; }
           { name = "cmdline"; }
           { name = "dap"; }
           { name = "latex_symbols"; }
