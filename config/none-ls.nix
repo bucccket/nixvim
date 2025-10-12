@@ -22,6 +22,7 @@
       };
       formatting = {
         clang_format.enable = true;
+        elm_format.enable = true;
         isort.enable = true;
         ktlint.enable = true;
         markdownlint.enable = true;

@@ -6,6 +6,7 @@
         bashls.enable = true;
         clangd.enable = true;
         cssls.enable = true;
+        elmls.enable = true;
         html.enable = true;
         htmx.enable = true;
         jedi_language_server.enable = true;

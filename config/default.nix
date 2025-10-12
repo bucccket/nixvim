@@ -20,6 +20,7 @@
     ./keymaps.nix
     ./lsp.nix
     ./lualine.nix
+    ./neotest.nix
     ./none-ls.nix
     ./nvim-tree.nix
     ./options.nix

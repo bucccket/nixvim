@@ -211,6 +211,34 @@
       options = { desc = "Extract Block To File"; };
     }
     {
+      # Run nearest test
+      key = "<leader>ut";
+      action = "<CMD>lua require('neotest').run.run()<CR>";
+      mode = "n";
+      options = { desc = "Run nearest test"; };
+    }
+    {
+      # Run current file tests
+      key = "<leader>uf";
+      action = "<CMD>lua require('neotest').run.run(vim.fn.expand('%'))<CR>";
+      mode = "n";
+      options = { desc = "Run current file tests"; };
+    }
+    {
+      # Debug nearest test
+      key = "<leader>ud";
+      action = "<CMD>lua require('neotest').run.run({strategy = 'dap'})<CR>";
+      mode = "n";
+      options = { desc = "Debug nearest test"; };
+    }
+    {
+      # Attach to nearest test
+      key = "<leader>ua";
+      action = "<CMD>lua require('neotest').run.attach()<CR>";
+      mode = "n";
+      options = { desc = "Attach to nearest test"; };
+    }
+    {
       # Open Diff View
       key = "<leader>gd";
       action = "<CMD>DiffviewOpen<CR>";
