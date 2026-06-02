@@ -10,8 +10,6 @@
         auto_install = true;
       };
     };
-    treesitter-context.enable = true;
-    treesitter-refactor.enable = true;
     rainbow-delimiters.enable = true;
   };
 }

@@ -11,7 +11,7 @@
       diagnostics = {
         cppcheck.enable = true;
         ktlint.enable = true;
-        mypy.enable = true;
+        # mypy.enable = true; # unneeded apparently
         pydoclint.enable = true;
         pylint.enable = true;
         semgrep.enable = true;
