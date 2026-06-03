@@ -8,7 +8,6 @@
         cssls.enable = true;
         elmls.enable = true;
         html.enable = true;
-        htmx.enable = true;
         jedi_language_server.enable = true;
         kotlin_language_server.enable = true;
         lua_ls.enable = true;
