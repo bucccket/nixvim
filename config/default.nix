@@ -35,7 +35,7 @@
     ./toggleterm.nix
     ./treesitter.nix
     ./trouble.nix
-    ./typescript-tools.nix
+    #./typescript-tools.nix
     ./vim-nix.nix
     ./vimtex.nix
     ./web-devicons.nix

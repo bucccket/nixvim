@@ -20,6 +20,7 @@
           installRustc = false;
         };
         tailwindcss.enable = true;
+        ts_ls.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";
