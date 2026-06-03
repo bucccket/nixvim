@@ -97,19 +97,25 @@
     }
     {
       # Open Diagnostics
-      key = "<leader>dd";
+      key = "<leader>ee";
       action = "<CMD>Trouble diagnostics toggle<CR>";
       options = { desc = "Trouble Diagnostics"; };
     }
     {
       # Open Symbols
-      key = "<leader>ds";
+      key = "<leader>es";
       action = "<CMD>Trouble symbols toggle<CR>";
       options = { desc = "Trouble Symbols"; };
     }
     {
       # Open LSP
-      key = "<leader>dl";
+      key = "<leader>el";
+      action = "<CMD>Trouble lsp toggle<CR>";
+      options = { desc = "Trouble LSP Info toggle"; };
+    }
+    {
+      # Open LSP
+      key = "<leader>el";
       action = "<CMD>Trouble lsp toggle<CR>";
       options = { desc = "Trouble LSP Info toggle"; };
     }

@@ -18,6 +18,7 @@
     ./git.nix
     ./image.nix
     ./keymaps.nix
+    ./lsp-lines.nix
     ./lsp.nix
     ./lualine.nix
     ./neotest.nix
@@ -25,9 +26,7 @@
     ./nvim-tree.nix
     ./options.nix
     ./refactoring.nix
-    # ./rustaceanvim.nix
     ./smear-cursor.nix
-    # ./startpage.nix
     ./tagbar.nix
     ./telescope.nix
     ./tmux-navigator.nix
@@ -35,7 +34,6 @@
     ./toggleterm.nix
     ./treesitter.nix
     ./trouble.nix
-    #./typescript-tools.nix
     ./vim-nix.nix
     ./vimtex.nix
     ./web-devicons.nix
