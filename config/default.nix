@@ -35,7 +35,7 @@
     ./treesitter.nix
     ./trouble.nix
     ./vim-nix.nix
-    ./vimtex.nix
+    #./vimtex.nix
     ./web-devicons.nix
     ./which-key.nix
     ./wilder.nix
