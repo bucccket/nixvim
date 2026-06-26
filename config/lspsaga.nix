@@ -12,7 +12,7 @@
         extend_gitsigns = true;
         show_server_name = true;
       };
-      lightbulb.enable = true;
+      lightbulb.enable = false;
       symbol_in_winbar.enable = true;
     };
   };

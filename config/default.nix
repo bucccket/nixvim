@@ -19,7 +19,7 @@
     ./git.nix
     ./image.nix
     ./keymaps.nix
-    #./lsp-lines.nix
+    ./lsp-lines.nix
     ./lsp.nix
     ./lspsaga.nix
     ./lualine.nix
