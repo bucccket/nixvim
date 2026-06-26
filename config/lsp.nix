@@ -21,15 +21,28 @@
           installRustc = false;
         };
         tailwindcss.enable = true;
-        ts_ls.enable = true;
+        ts_ls.enable = false;
       };
       keymaps.lspBuf = {
         "gd" = "definition";
         "gD" = "references";
         "gt" = "type_definition";
         "gi" = "implementation";
-        "K" = "hover";
       };
+      keymaps.extra = [
+        {
+          key = "K";
+          action = "<CMD>Lspsaga hover_doc<CR>";
+        }
+        {
+          key = "<leader>ca";
+          action = "<CMD>lua require('actions-preview').code_actions()<CR>";
+        }
+        {
+          key = "<leader>la";
+          action = "<CMD>Lspsaga code_action<CR>";
+        }
+      ];
     };
     lsp-format = { lspServersToEnable = [ "nixd" ]; };
   };

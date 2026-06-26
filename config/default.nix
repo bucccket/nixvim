@@ -3,6 +3,7 @@
 {
   # Import all your configuration modules here
   imports = [
+    ./actions-preview.nix
     ./autopairs.nix
     ./autosave.nix
     ./bufdelete.nix
@@ -18,10 +19,12 @@
     ./git.nix
     ./image.nix
     ./keymaps.nix
-    ./lsp-lines.nix
+    #./lsp-lines.nix
     ./lsp.nix
+    ./lspsaga.nix
     ./lualine.nix
     ./neotest.nix
+    #./noice.nix
     ./none-ls.nix
     ./nvim-tree.nix
     ./options.nix
@@ -34,11 +37,12 @@
     ./toggleterm.nix
     ./treesitter.nix
     ./trouble.nix
+    ./typescript-tools.nix
     ./vim-nix.nix
     #./vimtex.nix
     ./web-devicons.nix
     ./which-key.nix
-    ./wilder.nix
+    #./wilder.nix
   ];
 
   extraPlugins = with pkgs.vimPlugins; [
@@ -47,7 +51,10 @@
     nvim-treesitter-parsers.haskell
   ];
 
-  extraPackages = with pkgs; [ gcc ];
+  extraPackages = with pkgs; [
+    gcc
+    typescript
+  ];
 
   colorschemes.gruvbox.enable = true;
 
